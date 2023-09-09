@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 
 <head>
     <meta charset="UTF-8">
@@ -9,68 +9,64 @@
 
 <body>
     <div id="header">
-        <ul>
-            <h1>Registration Form</h1>
-        </ul>
+        <h1>Registration Form</h1>
     </div>
     <div id="content">
-        <ul>
-            <form action="/process" method="post">
-                <div><label for="uname">First Name: * </label>
-                    <input type="text" name="NameText" id="uname">
-                </div>
-                <div><label for="surname">Last Name: * </label>
-                    <input type="text" name="SurnameText" id="surname">
-                </div>
-                <div><label for="email">Email Address: * </label>
-                    <input type="email" name=Email id="email">
-                </div>
-                <div><label for="password1">Password: * </label>
-                    <input type="password" name="Password1" id="password1">
-                </div>
-                <div><label for="password2">Confirm Password: * </label>
-                    <input type="password" name="Password2" id="password2">
-                </div>
-                <div><label for="birthday">Birthday: </label>
-                    <input type="date" name="Birthday" id="birthday">
-                </div>
+        <form action="/process" method="post">
+            <div><label for="uname">First Name: * </label>
+                <input type="text" name="NameText" id="uname">
+            </div>
+            <div><label for="surname">Last Name: * </label>
+                <input type="text" name="SurnameText" id="surname">
+            </div>
+            <div><label for="email">Email Address: * </label>
+                <input type="email" name=Email id="email">
+            </div>
+            <div><label for="password1">Password: * </label>
+                <input type="password" name="Password1" id="password1">
+            </div>
+            <div><label for="password2">Confirm Password: * </label>
+                <input type="password" name="Password2" id="password2">
+            </div>
+            <div><label for="birthday">Birthday: </label>
+                <input type="date" name="Birthday" id="birthday">
+            </div>
+            <div>
                 <div>
-                    <Label for="genderId"> Gender Identity:</Label>
-                    <div>
-                        <input type="radio" name="Gender1" id="genderId" value="1">Male
-                        <input type="radio" name="Gender2" id="genderId" value="2">Female
-                        <input type="radio" name="Gender3" id="genderId" value="3">Non-binary
-                        <input type="radio" name="Gender4" id="genderId" value="4">I prefer not to answer
-                    </div>
+                <Label for="genderId1"> Gender Identity:</Label>
                 </div>
+                    <input type="radio" name="Gender" id="genderId1" value="1">Male
+                    <input type="radio" name="Gender" id="genderId2" value="2">Female
+                    <input type="radio" name="Gender" id="genderId3" value="3">Non-binary
+                    <input type="radio" name="Gender" id="genderId4" value="4">I prefer not to answer
+            </div>
+            <div>
+                <label for="description">A short descripcion about myself:</label>
                 <div>
-                    <label for="description">A short descripcion about myself:</label>
-                    <div>
-                        <textarea name="Textarea" id="textarea" cols="30" rows="5"></textarea>
-                    </div>
+                    <textarea name="Textarea" id="description" cols="30" rows="5"></textarea>
                 </div>
-                <div>
-                    <label for="lang">Favorite language </label>
-                    <select name="Language" id="lang">
-                        <option value="javascript"> JavaScript</option>
-                        <option value="java"> Java</option>
-                        <option value="python"> Python</option>
-                        <option value="c++"> C++</option>
-                        <option value="php"> PHP</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="checkbox" name="Box" id="box">
-                    <label for="box">Yes, I would like to receive periodic email updates</label>
-                </div>
-                <div>
-                    <input type="submit" name="Submit" value="Create Account">
-                </div>
-            </form>
-            <div><label> * Indicates a required field</label></li>
-        </ul>
+            </div>
+            <div>
+                <label for="lang">Favorite language </label>
+                <select name="Language" id="lang">
+                    <option value="javascript"> JavaScript</option>
+                    <option value="java"> Java</option>
+                    <option value="python"> Python</option>
+                    <option value="c++"> C++</option>
+                    <option value="php"> PHP</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="Box" id="box">
+                <label for="box">Yes, I would like to receive periodic email updates</label>
+            </div>
+            <div>
+                <input type="submit" name="Submit" value="Create Account">
+            </div>
+        </form>
+        <div><label> * Indicates a required field</label>
+        </div>
     </div>
-
 </body>
 
 </html>
